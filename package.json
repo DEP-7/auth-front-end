@@ -2,9 +2,10 @@
   "name": "auth-front-end",
   "version": "1.0.0",
   "scripts": {
+    "watch": "tsc --watch",
     "clean": "rm -rf ./docs",
-    "start": "parcel index.html --dist-dir docs",
-    "build": "rm -rf ./docs && parcel build index.html --dist-dir docs"
+    "start": "parcel serve dashboard.html --dist-dir docs",
+    "build": "npm run clean && parcel dashboard.html --dist-dir docs"
   },
   "repository": {
     "type": "git",
